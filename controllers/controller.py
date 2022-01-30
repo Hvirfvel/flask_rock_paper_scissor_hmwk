@@ -9,7 +9,6 @@ def index():
 
 @app.route('/<player_1_hand>/<player_2_hand>')
 def result(player_1_hand, player_2_hand):
-    print("It works")
     player_1 = Player("Player 1", player_1_hand)
     player_2 = Player("Player 2", player_2_hand)
     winner = compare_hands(player_1, player_2)
