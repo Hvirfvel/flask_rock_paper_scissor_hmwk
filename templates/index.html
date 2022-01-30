@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Rock, paper, scissors</h1>
+        <p> 
+        {% if winner == None %}
+        It's a draw!
+        {% else %}
+        {{ winner.name }} wins by using {{ winner.hand }}</p>
+        {% endif %}
+    </body>
+</html>
